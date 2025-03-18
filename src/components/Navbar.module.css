@@ -1,0 +1,35 @@
+/* src/components/Navbar.module.css */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    position: sticky; 
+    top: 0; 
+    z-index: 999; /* ensures navbar stays on top when scrolling */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .navLinks a:hover {
+    color: #0070f3;
+  }
+  

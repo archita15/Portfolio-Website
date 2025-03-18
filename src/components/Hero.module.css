@@ -1,0 +1,125 @@
+/* src/components/Hero.module.css */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+    color: #fff;
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .textSection {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ctaButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff416c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ff4b2b;
+  }
+  
+  .imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profileImage {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  
+  .scrollDown {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mouse {
+    width: 24px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .wheel {
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    animation: wheel 2s infinite;
+  }
+  
+  @keyframes wheel {
+    0% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(10px);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .textSection, .imageSection {
+      flex: none;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    .title {
+      font-size: 2.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  }
+  
